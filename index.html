@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Vtuber Style Logos</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <link href="https://fonts.font.im/icon?family=Material+Icons" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+  </head>
+  <body>
+    <mdui-top-app-bar>
+      <mdui-button-icon id="open-drawer-btn" icon="menu"></mdui-button-icon>
+      <mdui-top-app-bar-title>Vtuber Style Logos</mdui-top-app-bar-title>
+    </mdui-top-app-bar>
+    <mdui-navigation-drawer modal close-on-overlay-click id="left-drawer">
+      <mdui-list>
+        <mdui-list-item icon="link" rounded href="https://github.com/yucho123987/vtuber-style-logos" target="_blank">This website's repo</mdui-list-item>
+        <mdui-list-item icon="link" rounded href="https://github.com/SAWARATSUKI/KawaiiLogos" target="_blank">Logo author's repo</mdui-list-item>
+        <mdui-divider></mdui-divider>
+        <mdui-list-item id="refresh-btn" icon="refresh" rounded>Refresh logo list</mdui-list-item>
+        <mdui-list-item id="about-btn" icon="info" rounded>About</mdui-list-item>
+      </mdui-list>
+    </mdui-navigation-drawer>
+    <div id="logos"></div>
+    <div id="loading-logos" class="logos-loading-status">Loading</div>
+    <div id="loading-logos-failed" class="logos-loading-status">
+      <p>Unable to load logo list.</p>
+      <mdui-button id="try-again-btn">Try again</mdui-button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

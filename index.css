@@ -1,0 +1,20 @@
+.logo-list-item {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+}
+.logo-list-item h3 {
+  margin-top: 0;
+}
+.logo-list-item img {
+  width: 100px;
+}
+#logos, .logo-type {
+  padding: 10px;
+}
+#logos, .logos-loading-status {
+  display: none;
+}
+#logos, .logos-loading-status {
+  text-align: center;
+}
